@@ -1,5 +1,5 @@
 cluster.name: cratecluster
-node.name: crate4
+node.name: crate6
 node.master: false
 node.data: true
 http.port: 4200
