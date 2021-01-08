@@ -1,7 +1,7 @@
 cluster.name: cratecluster
 node.name: crate3
 node.master: true
-node.data: true
+node.data: false
 http.port: 4200
 psql.port: 5432
 transport.tcp.port: 4300
