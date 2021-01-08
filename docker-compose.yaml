@@ -1,0 +1,38 @@
+version: "3"
+services:
+  crate1:
+    image: dalongrong/cratedb:4.4.0
+    volumes:
+    - "./cratedb/data1:/data"
+    - "./cratedb/1.yaml:/crate/config/crate.yml"
+    ports:
+    - "4200:4200"
+    - "4300:4300"
+    - "5432:5432"
+  crate2:
+    image: dalongrong/cratedb:4.4.0
+    volumes:
+    - "./cratedb/data2:/data"
+    - "./cratedb/2.yaml:/crate/config/crate.yml"
+    ports:
+    - "4201:4200"
+    - "4301:4300"
+    - "5433:5432"
+  crate3:
+    image: dalongrong/cratedb:4.4.0
+    volumes:
+    - "./cratedb/data3:/data"
+    - "./cratedb/3.yaml:/crate/config/crate.yml"
+    ports:
+    - "4202:4200"
+    - "4302:4300"
+    - "5434:5432"
+  crate4:
+    image: dalongrong/cratedb:4.4.0
+    volumes:
+    - "./cratedb/data4:/data"
+    - "./cratedb/4.yaml:/crate/config/crate.yml"
+    ports:
+    - "4203:4200"
+    - "4303:4300"
+    - "5435:5432"
