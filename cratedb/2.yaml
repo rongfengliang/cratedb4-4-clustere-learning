@@ -9,8 +9,8 @@ discovery.seed_hosts: ["crate1"]
 cluster.initial_master_nodes: ["crate1"]
 http.cors.enabled: true
 http.cors.allow-origin: "*"
-gateway.expected_nodes: 3
-gateway.recover_after_nodes: 2
+gateway.expected_nodes: 5
+gateway.recover_after_nodes: 3
 gateway.recover_after_time: 5m
 network.host: _local_,_site_
 path.logs: /data/log
