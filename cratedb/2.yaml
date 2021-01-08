@@ -1,6 +1,6 @@
 cluster.name: cratecluster
 node.name: crate2
-node.master: false
+node.master: true
 node.data: true
 http.port: 4200
 psql.port: 5432
@@ -9,7 +9,7 @@ discovery.seed_hosts: ["crate1"]
 cluster.initial_master_nodes: ["crate1"]
 http.cors.enabled: true
 http.cors.allow-origin: "*"
-gateway.expected_nodes: 5
+gateway.expected_nodes: 3
 gateway.recover_after_nodes: 3
 gateway.recover_after_time: 5m
 network.host: _local_,_site_
